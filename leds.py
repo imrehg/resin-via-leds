@@ -11,6 +11,6 @@ if __name__ == '__main__':
     value = 0
     gpio.setup(PIN, gpio.OUT)
     while True:
-        set(PIN, value)
+        gpio.set(PIN, value)
         value = 1 - value
         sleep(0.25)
